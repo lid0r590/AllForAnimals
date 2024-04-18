@@ -1,0 +1,127 @@
+
+@media(max-width: 768px){
+        
+    #firstBackground, #secondBackGround, body{
+    background-size: 50%;
+}
+#upImage{
+    width: 100%;
+    z-index: 1;  
+    position: absolute;
+}
+#tempSpace{
+    padding-bottom: 50px;
+}
+#phoneLogo{
+    position: fixed;
+    top: 35px;
+    left: 35px;
+    width: 50px;
+    z-index: 3;
+    animation: blink 3s linear; 
+    opacity: 0;
+}
+h3{
+    font-size: 5vw;
+}
+#rectangle{
+    padding-inline: 1%;
+}
+#rectangle a{
+    font: 6px;
+}
+.linkWhite{
+    font-size:3.5vw;
+    font-weight: 600;
+    color: white;
+}
+#tabletLogo, #pcLogo{
+    display: none;
+}
+.eachReview{
+    padding-inline: 25%;
+    column-gap: 10px;
+    padding-inline: 5%;
+    padding-bottom: 10%;
+}
+#upImage2{
+    display: none;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    z-index: 0;   
+}
+.textReview{    
+    font-size: 25px;
+    padding: 25px;
+}
+.name{
+    font-size: 30px;
+}
+.eachReview div{
+    width: 200px;
+}
+#upImages{
+    padding-bottom: 25%;
+    top: 0; 
+    left: 0;
+}
+h1{    
+    font-size: 4vw;
+    padding-inline: 15px;
+    padding-block: 10px;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5vw;
+    display: block;
+    text-align: center;
+    padding-block: 10vw 12vw;
+}
+.evenGap{
+    grid-template-areas: "text image";
+}
+.oddGap{
+    grid-template-areas: "image text";
+}
+.storyImage{    
+    width: 75%;
+    padding: 20px;
+    background-color: var(--orange);
+}
+.storyText{
+    font-size: 20px;
+    padding: 3vw 3vw;
+    margin: auto;
+    background-color: var(--blue);
+    width: 50vw;
+    max-width: 500px;
+    font-size: clamp(15px,1.5vw,25px);
+}
+#story div, #store div{
+    padding: 5vw;
+}
+#store{
+    padding-block: 30px 100px;
+}
+.imageStore{
+    padding-block: 20px;
+}
+#aboutUsPage{
+    font-size: 20px;
+}
+.loginBody {
+    padding-block: 125px;
+}
+}
+
+.profile {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}

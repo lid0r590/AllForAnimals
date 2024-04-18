@@ -1,0 +1,102 @@
+@media(min-width: 769px){
+    
+    #firstBackground,body{
+        background-size: 33%;
+    }
+    #secondBackground{
+        background-size: 59%;
+    }
+    
+.linkWhite{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+#phoneLogo{
+    display: none;
+}
+#upImage{
+    position: absolute;
+    width: 800px; 
+    z-index: 1;  
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+.eachReview{
+    padding-inline: min(150px,2%);
+    grid-column-gap: max(5px,5%);
+    padding-block: 63px;
+}
+#upImage2{
+    height: 230px;
+    width: 100%;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    z-index: 0;   
+}
+h1{    
+    font-size: clamp(40px, 5vw, 60px);
+    padding-inline: 25px;
+    padding-block: 10px;
+}
+#upImages{
+    padding-bottom: 200px;
+}
+h3{
+    font-size: 30px;
+    background-color: var(--orange);
+    
+}
+#tempSpace{
+    padding-bottom: 50px;
+}
+.name{
+    font-size: 50px;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    display: block;
+    text-align: center;
+    padding-block: 180px 80px;
+}
+.storyImage{    
+    background-color: var(--orange);
+}
+
+.storyText{
+    background-color: var(--blue);
+    width: 50vw;
+    max-width: 500px;
+    font-size: clamp(15px,1.5vw,25px);
+}
+.imageStore{
+    padding-block: 20px;
+    max-width: 1200px;
+}
+#store{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    row-gap: 1vw;
+    padding-block: 60px 150px;
+}
+#aboutUsPage{
+    font-size: 20px;
+}
+.loginBody {
+    padding-block: 225px;
+}
+.profile {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+}
+}

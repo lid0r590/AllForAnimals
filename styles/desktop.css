@@ -1,0 +1,61 @@
+@media(min-width: 1200px){
+
+    #store{        
+    padding-inline: 5%;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+    #story{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        padding-inline: 20%;
+        align-content: center;
+        row-gap: 1vw;
+        padding-bottom: 3vw;
+    }
+    .storyImage{    
+        width: 75%;
+        padding: 5px;
+    }
+    .storyText{
+        font-size: 20px;
+        padding: 1vw 1vw;
+        margin: auto;
+    }
+    #rectangle{
+        padding-inline: 30%;
+    }
+    .textReview{
+        font-size: clamp(20px, 2vw, 30px);
+        padding: 15px;
+    }
+    #pcLogo{
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        width: 180px;
+        z-index: 3;
+        animation: blink 3s 1; 
+        opacity: 0;
+    }
+    #tabletLogo{
+        display: none;
+    }
+    #totalReview{
+        display: grid;
+        padding-inline: 3%;
+        grid-template-columns: 1fr 1fr 1fr;    
+        max-width: 2200px; 
+        margin: 0 auto;    
+    }
+    .evenGap, .oddGap{
+        grid-template-areas: "text image";
+        padding-inline: 20px;
+    
+    }
+    table{
+        max-width: 1250px;
+    }
+    
+    
+}

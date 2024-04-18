@@ -1,0 +1,55 @@
+
+@media(min-width: 769px) and (max-width: 1199px){
+    #store{        
+    grid-template-columns: 1fr 1fr;
+    }
+    .evenGap{
+        grid-template-areas: "text image";
+    }
+    .oddGap{    
+        grid-template-areas: "image text";
+    }
+    .imageReview{    
+        min-width: 150px;
+    }
+    .textReview{
+        font-size: clamp(10px, 1.6vw, 50px);
+        padding: 15px;
+    }
+    #pcLogo{
+        display: none;
+    }
+    #tabletLogo{
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        width: 150px;
+        z-index: 3;
+        animation: blink 3s 1; 
+        opacity: 0;
+    }
+    #totalReview{
+        display: grid;
+        padding-inline: 3%;
+        margin-inline: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .eachReview{
+        margin-inline:10px ;
+    }
+    #rectangle{
+        padding-inline: 2%;
+        
+    }
+    #story div{
+        padding: 5vw;
+    }
+    .storyText{
+        padding: 2vw 7vw;
+        margin-inline: auto;
+    }
+    .storyImage{    
+        width: 50%;
+        padding: 20px;
+    }
+}

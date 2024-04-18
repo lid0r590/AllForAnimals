@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body class="loginBody">        
+  
+    <img id="phoneLogo" src="./images/Phone.png">
+    <img id="tabletLogo" src="./images/Tablet.png">
+    <img id="pcLogo" src="./images/Pc.png">
+    
+<div class="login-container">
+  <h1>Login</h1>
+  <form action="process-login.php" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Username" title="Please fill out this field" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Password" title="Please fill out this field" required>
+      <button type="button" onclick="checkAndRedirect()">Submit</button>
+  </form>
+  
+  <div id="successMessage">Login successfully! Please Wait.</div>
+  
+  <script>
+      function checkAndRedirect() {
+          var username = document.getElementById('username').value;
+          var password = document.getElementById('password').value;
+
+          if (username && password) {
+              // Afficher le message "Register successfully!"
+              var successMessage = document.getElementById('successMessage');
+              successMessage.style.display = 'block';
+
+              // Après 3 secondes, masquer le message et rediriger vers la nouvelle page
+              setTimeout(function() {
+                  successMessage.style.display = 'none';
+                  window.location.href = "ProfilPage.html";
+              }, 3000);
+          } else {
+              alert("Please fill every section.");
+          }
+      }
+  </script>
+</div>
+    
+  <nav id="rectangleDown">
+    <a href="AllForAnimals.html"  class="linkWhite">Menu</a>
+    <a href="Register.html" class="linkWhite">Register</a>
+    <a href="store.html" class="linkWhite">The store</a>
+    <a href="About.html" class="linkWhite">About us</a>
+  </nav>
+</body>
+</html>
